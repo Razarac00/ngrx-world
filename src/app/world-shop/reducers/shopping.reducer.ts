@@ -1,9 +1,10 @@
 import { ShoppingActionTypes, ShoppingAction } from "../actions/shopping.action";
 import { WorldItem } from "../models/world-item.model";
+import { v4 as uuidv4 } from "uuid";
 
 const initialState: Array<WorldItem> = [
     {
-        id: "",
+        id: uuidv4(),
         name: 'Moonlight GreatSword',
     }
 ];
